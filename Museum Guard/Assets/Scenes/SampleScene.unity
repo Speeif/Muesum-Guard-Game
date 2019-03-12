@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 316039936}
   - component: {fileID: 316039935}
   - component: {fileID: 316039934}
+  - component: {fileID: 316039940}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -214,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f87aa89758bf24dbb55f2cd6b92a35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 20
 --- !u!65 &316039935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -303,6 +304,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &316039940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316039933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed092bd1f5cc14e4db5fb515a640cf85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  currAttack: {fileID: 0}
+  hushAttack: {fileID: 467304602250167884, guid: 59fcc0d890e7b3a43a149c14268ff9d5,
+    type: 3}
+  time: 0
+  timer: 1
 --- !u!1 &404777204
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +598,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.23396277, y: -0, z: -0, w: 0.9722456}
-  m_LocalPosition: {x: -3.94, y: 6.89, z: -6.33}
+  m_LocalPosition: {x: -3.94, y: 10.6, z: -13.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

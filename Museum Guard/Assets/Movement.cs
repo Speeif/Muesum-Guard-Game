@@ -24,9 +24,10 @@ public class Movement : MonoBehaviour
 		float moveVertical = Input.GetAxis("Vertical");
 
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
-
-		transform.rotation = Quaternion.LookRotation(movement);
-		transform.Translate(movement * speed * Time.deltaTime, Space.World);
-
+        if (Vector3.Magnitude(movement) > 0)
+        {
+            transform.rotation = Quaternion.LookRotation(movement);
+            transform.Translate(movement * speed * Time.deltaTime, Space.World);
+        }
     }
 }
