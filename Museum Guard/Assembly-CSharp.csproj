@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CameraScript.cs" />
      <Compile Include="Assets\Dat Spawn yo.cs" />
      <Compile Include="Assets\Hush.cs" />
      <Compile Include="Assets\hushAttack.cs" />
