@@ -32,18 +32,14 @@ public class Movement : MonoBehaviour
 
 	void OnCollisionEnter(Collision collision)
 	{
-
-
-
+       
 		if(collision.gameObject.tag == "Enemy"){
 			
-			Debug.Log("ENEMY TOUCHED");		
+			Debug.Log("ENEMY TOUCHED");
 
-
-
-			
-				
-		}
-
+            Rigidbody rbCol = collision.gameObject.GetComponent<Rigidbody>();
+            rbCol.AddForce((collision.gameObject.transform.position - transform.position) *600);
+            				
+		}   
 	}	
 }
