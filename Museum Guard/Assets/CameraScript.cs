@@ -9,37 +9,65 @@ public class CameraScript : MonoBehaviour
     public GameObject Player;
     public GameObject[] interests;
     public float centering;
+    private float exp;
+    private int j, oldj;
+
+    public int LayerForInterests;
+
+
+
+    public float FixationDistance;
 
     void Start()
     {
         playerposition = Player.transform.position;
-        transform.position = new Vector3(playerposition.x, 20, playerposition.z-20);
+        transform.position = new Vector3(playerposition.x, 20, playerposition.z - 20);
 
         transform.LookAt(Player.transform.position);
         centering = 0.1f;
     }
 
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
+        Collider[] ints = Physics.OverlapSphere(Player.transform.position, FixationDistance, 1 << 8 + LayerForInterests);
+        foreach (Collider coll in ints)
+        {
 
-        transform.position = new Vector3(Player.transform.position.x,20,Player.transform.position.z -20);
+        }
+
+        transform.position = new Vector3(Player.transform.position.x, 20, Player.transform.position.z - 20);
 
         center = Vector3.zero;
 
-        center += Player.transform.position;
-        int j = 1;
-        foreach(var obj in interests){
-            float dist = Vector3.Distance(obj.transform.position, Player.transform.position);
+        j = 0;
+        foreach (var obj in ints)
+        {
+            float dist = Vector3.Distance(obj.gameObject.transform.position, Player.transform.position);
 
-            if(dist < 6){
+            if (dist < FixationDistance)
+            {
                 j++;
                 center += obj.transform.position;
             }
         }
 
-        center /= j;
+        if (j != oldj)
+        {
+            exp = 0;
+            oldj = j;
+        }
 
-        lookPos = Vector3.Lerp(lookPos, center, 0.5f * Time.deltaTime*8);
-        
+        center /= j;
+        if (j == 0)
+        {
+            lookPos = Vector3.Lerp(lookPos, Player.transform.position, 0.7f * exp);
+            exp += Time.deltaTime;
+        }
+        else
+        {
+            lookPos = Vector3.Lerp(lookPos, center, 0.5f * exp);
+            exp += Time.deltaTime;
+        }
         transform.LookAt(lookPos);
     }
 }

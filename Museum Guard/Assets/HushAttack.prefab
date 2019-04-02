@@ -105,3 +105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  radius: 10
+  coneSpreadAngles: 0.4
+  interactableLayer: 9
