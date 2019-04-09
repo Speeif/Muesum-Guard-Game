@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Node : MonoBehaviour
+public class Node
 {
-    public List<Node> adjecantNodes;
-    public bool isPOI;
-    // Start is called before the first frame update
-    public Node getNeighbor(int i)
+    public bool walkable;
+    public Vector3 worldPosition;
+
+    public Node(bool _walkable, Vector3 _worldPos)
     {
-        return adjecantNodes[i];
+        walkable = _walkable;
+        worldPosition = _worldPos;
     }
 }
