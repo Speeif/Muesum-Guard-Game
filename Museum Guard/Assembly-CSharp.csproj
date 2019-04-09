@@ -59,7 +59,7 @@
      <Compile Include="Assets\Keyring.cs" />
      <Compile Include="Assets\Movement.cs" />
      <Compile Include="Assets\Node.cs" />
-     <Compile Include="Assets\person.cs" />
+     <Compile Include="Assets\Pathfinding.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/andre/OneDrive/Dokumenter/GitHub/Muesum-Guard-Game/Museum Guard/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
