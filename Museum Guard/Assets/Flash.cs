@@ -21,12 +21,12 @@ public class Flash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space") && !timed)
+        if (Input.GetKeyDown("e") && !timed)
         {
             timed = true;
             time = 0;
-            GameObject attack = GameObject.Instantiate(Flashlight, transform.position + transform.forward, transform.rotation);
-            attack.GetComponent<Flashlight>().enabled = true;
+            GameObject flashlight = GameObject.Instantiate(Flashlight, transform.position + transform.forward, transform.rotation);
+            flashlight.GetComponent<Flashlight>().enabled = true;
 
             colls = Physics.OverlapSphere(transform.position, radius, interactableLayer + 1 << 8);
 

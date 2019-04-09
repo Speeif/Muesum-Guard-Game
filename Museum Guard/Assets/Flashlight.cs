@@ -24,7 +24,6 @@ public class Flashlight : MonoBehaviour
         transform.position = player.transform.position + player.transform.forward;
         transform.LookAt(player.transform.position + player.transform.forward * 2);
         start = true;
-
     }
 
     // Update is called once per frame
@@ -32,7 +31,6 @@ public class Flashlight : MonoBehaviour
     {
         if (start)
         {
-            Debug.Log("Done with the shiiiit");
             start = false;
         }
         //Time since initiation
