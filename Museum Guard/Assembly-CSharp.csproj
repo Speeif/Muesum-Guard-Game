@@ -53,12 +53,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraScript.cs" />
-     <Compile Include="Assets\Hush.cs" />
-     <Compile Include="Assets\hushAttack.cs" />
-     <Compile Include="Assets\Movement.cs" />
-     <Compile Include="Assets\Node.cs" />
-     <Compile Include="Assets\person.cs" />
+     <Compile Include="Assets\Roomba.cs" />
+     <Compile Include="Assets\Scripts\CameraScript.cs" />
+     <Compile Include="Assets\Scripts\GM.cs" />
+     <Compile Include="Assets\Scripts\Grid.cs" />
+     <Compile Include="Assets\Scripts\Hush.cs" />
+     <Compile Include="Assets\Scripts\hushAttack.cs" />
+     <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\Node.cs" />
+     <Compile Include="Assets\Scripts\Pathfinding.cs" />
+     <Compile Include="Assets\Scripts\Person.cs" />
+     <Compile Include="Assets\Scripts\POI.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Documents/Unity projects/Museum Guard/Muesum-Guard-Game/Museum Guard/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

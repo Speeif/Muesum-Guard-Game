@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 73343d04304946b498a6ea15e4ade079
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Body
+    100004: Cylinder
+    100006: Head
+    100008: Head_end
+    100010: Lfoot
+    100012: Lfoot_end
+    100014: LLarm
+    100016: LLhand
+    100018: LLhand_end
+    100020: LLleg
+    100022: LRarm
+    100024: LRhand
+    100026: LRhand_end
+    100028: LRleg
+    100030: //RootNode
+    100032: Rfoot
+    100034: Rfoot_end
+    100036: Torus
+    100038: Torus.001
+    100040: ULarm
+    100042: ULhand
+    100044: ULleg
+    100046: URarm
+    100048: URhand
+    100050: URleg
+    400000: Armature
+    400002: Body
+    400004: Cylinder
+    400006: Head
+    400008: Head_end
+    400010: Lfoot
+    400012: Lfoot_end
+    400014: LLarm
+    400016: LLhand
+    400018: LLhand_end
+    400020: LLleg
+    400022: LRarm
+    400024: LRhand
+    400026: LRhand_end
+    400028: LRleg
+    400030: //RootNode
+    400032: Rfoot
+    400034: Rfoot_end
+    400036: Torus
+    400038: Torus.001
+    400040: ULarm
+    400042: ULhand
+    400044: ULleg
+    400046: URarm
+    400048: URhand
+    400050: URleg
+    2100000: Material
+    2100002: Material.008
+    2100004: Material.001
+    2100006: Material.002
+    2100008: Material.003
+    2100010: Material.004
+    2100012: Material.005
+    2100014: Material.006
+    2100016: Material.011
+    2100018: Material.010
+    2100020: Material.012
+    2100022: Material.013
+    2300000: Cylinder
+    2300002: Torus
+    3300000: Cylinder
+    3300002: Torus
+    4300000: Torus.001
+    4300002: Torus
+    4300004: Cylinder
+    7400000: Armature|ArmatureAction
+    7400002: Armature|TorusAction
+    7400004: Torus|TorusAction
+    9500000: //RootNode
+    13700000: Torus.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
